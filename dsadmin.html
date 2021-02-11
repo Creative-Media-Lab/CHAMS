@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+        <meta name="description" content="CME Group HR Management System">
+        <meta name="robots" content="noindex, nofollow">
+        <title>Dashboard - Homepage</title>
+		
+		<!-- Favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="assets/img/cmelogo.png">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		
+		<!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		
+		<!-- Fontawesome CSS -->
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+		
+		<!-- Lineawesome CSS -->
+        <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+		
+		<!-- Chart CSS -->
+		<link rel="stylesheet" href="assets/plugins/morris/morris.css">
+		
+		<!-- Main CSS -->
+        <link rel="stylesheet" href="assets/css/style.css">
+		
+		
+    </head>
+	
+    <body>
+		<!-- Main Wrapper -->
+        <div class="main-wrapper">
+		
+			<!-- Header -->
+            <div class="header">
+			
+				<!-- Logo -->
+                <div class="header-left">
+                    
+                </div>
+				<!-- /Logo -->
+				
+				<a id="toggle_btn" href="javascript:void(0);">
+					<span class="bar-icon">
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
+				</a>
+				
+				<!-- Header Title -->
+                <div class="page-title-box">
+					<h3>C.H.A.M.S<h3>
+                </div>
+				<!-- /Header Title -->
+				
+				<a id="mobile_btn" class="mobile_btn" href="#sidebar"><i class="fa fa-bars"></i></a>
+				
+				<!-- Header Menu -->
+				<ul class="nav user-menu">
+				
+					<!-- Search -->
+					<li class="nav-item">
+						<div class="top-nav-search">
+							<a href="javascript:void(0);" class="responsive-search">
+								<i class="fa fa-search"></i>
+						   </a>
+						
+						</div>
+					</li>
+					<!-- /Search -->
+				
+					
+				
+					<!-- Notifications -->
+					<li class="nav-item dropdown">
+					
+						<div class="dropdown-menu notifications">
+							
+							<div class="noti-content">
+								<ul class="notification-list">
+									<li class="notification-message">
+										<a href="activities.html">
+											<div class="media">
+												<span class="avatar">
+													<img alt="" src="assets/img/profiles/2.jpg">
+												</span>
+												
+												<div class="media-body">
+													<p class="noti-details"><span class="noti-title"></span> has add you to Discover Penyabong Porject<span class="noti-title"></span></p>
+													<p class="noti-time"><span class="notification-time"></span></p>
+												</div>
+											</div>
+										</a>
+									</li>
+									
+								</ul>
+							</div>
+							<div class="topnav-dropdown-footer">
+								<a href="activities.html">View all Notifications</a>
+							</div>
+						</div>
+					</li>
+
+
+					<li class="nav-item dropdown has-arrow main-drop">
+						<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+							<span class="user-img"><img src="assets/img/profiles/1.jpg" alt="">
+							<span class="status online"></span></span>
+							<span>Admin</span>
+						</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="profile.php">My Profile</a>
+							<a class="dropdown-item" href="login.html">Logout</a>
+						</div>
+					</li>
+				</ul>
+				<!-- /Header Menu -->
+				
+				<!-- Mobile Menu -->
+				<div class="dropdown mobile-user-menu">
+					<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="profile.php">My Profile</a>
+						<a class="dropdown-item" href="login.html">Logout</a>
+					</div>
+				</div>
+				<!-- /Mobile Menu -->
+				
+            </div>
+			<!-- /Header -->
+			
+			<!-- Sidebar -->
+            <div class="sidebar" id="sidebar">
+                <div class="sidebar-inner slimscroll">
+					<div id="sidebar-menu" class="sidebar-menu">
+						<ul>
+							<li class="menu-title"> 
+								<span>Main</span>
+							</li>
+							<li class="submenu">
+								<a href="#"><i class="la la-dashboard"></i> <span> Dashboard</span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li><a class="active" href="dsadmin.html">Admin Dashboard</a></li>
+									
+								</ul>
+							</li>
+							<li class="submenu">
+								<a href="#"><i class="la la-cube"></i> <span> Apps</span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">	
+									<li><a href="activities.html">History</a></li>
+									<li><a href="history.html">Calendar</a></li>
+								</ul>
+							</li><i class="las la-user-circle"></i>
+							
+							<li class="submenu">
+								<a href="#" ><i class="la la-user"></i> <span>Staff</span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li class="submenu">
+									<a href="#"><span>Profile</span><span class="menu-arrow"></span></a>
+									<ul style="display:none;">
+									<li><a href="employeeshr.php">HR</a></li>
+									<li><a href="employeesfinance.php">Finance</a></li>
+									<li><a href="employeesquality.php">Quality/ISO</a></li>
+									<li><a href="employeestraining.php">Training</a></li>
+									<li><a href="employeesconsultancy.php">Consultancy</a></li>
+									<li><a href="employeesmarketing.php">Marketing</a></li>
+									<li><a href="employeessts.php">STS</a></li>
+									<li><a href="employeestpr.php">TPR</a></li>
+									<li><a href="employeescml.php">CML</a></li>
+									</ul>
+									</li>
+									<li><a href="leaves.html">Leaves (Admin)</a></li>
+									<li><a href="leaves-employee.php">Leaves (Employee)</a></li>
+									
+								</ul>
+							</li>
+						    
+
+							<li class="submenu">
+								<a href="#"><i class="la la-users"></i> <span>Department Projects</span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li><a href="projectshr.php">HR</a></li>
+									<li><a href="projectsfinance.php">Finance</a></li>
+									<li><a href="projectsquality.php">Quality/ISO</a></li>
+									<li><a href="projectstraining.php">Training</a></li>
+									<li><a href="projectsconsultancy.php">Consultancy</a></li>
+									<li><a href="projectsmarketing.php">Marketing</a></li>
+									<li><a href="projectssts.php">STS</a></li>
+									<li><a href="projectstpr.php">TPR</a></li>
+									<li><a href="projectscml.php">CML</a></li>
+									
+							    </ul>
+							</li>
+							<li class="submenu">
+								<a href="#"><i class="fa fa-book"></i> <span>Monthly Report</span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li><a href="monthlyreport.html">HR</a></li>
+									<li><a href="monthlyreport.html">Finance</a></li>
+									<li><a href="monthlyreport.html">Quality/ISO</a></li>
+									<li><a href="monthlyreport.html">Training</a></li>
+									<li><a href="monthlyreport.html">Consultancy</a></li>
+									<li><a href="monthlyreport.html">Marketing</a></li>
+									<li><a href="monthlyreport.html">STS</a></li>
+									<li><a href="monthlyreport.html">TPR</a></li>
+									<li><a href="monthlyreport.html">CML</a></li>
+									
+							    </ul>
+							</li>
+							<li class="submenu">
+								<a href="#"><i class="la la-book"></i> <span>Independent Projects</span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li><a href="projects.html">Projects</a></li>
+									
+								</ul>
+							</li>
+							
+							<li class="submenu">
+								<a href="#"><i class="fa fa-upload"></i> <span>Storage Upload</span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li><a href="file-manager.html">HR</a></li>
+									<li><a href="file-manager.html">Finance</a></li>
+									<li><a href="file-manager.html">Quality/ISO</a></li>
+									<li><a href="file-manager.html">Training</a></li>
+									<li><a href="file-manager.html">Consultancy</a></li>
+									<li><a href="file-manager.html">Marketing</a></li>
+									<li><a href="file-manager.html">STS</a></li>
+									<li><a href="file-manager.html">TPR</a></li>
+									<li><a href="file-manager.html">CML</a></li>
+									
+							    </ul>
+							</li>
+							
+							
+						</ul>
+					</div>
+                </div>
+            </div>
+			<!-- /Sidebar -->
+			
+			<!-- Page Wrapper -->
+            <div class="page-wrapper">
+			
+				<!-- Page Content -->
+                <div class="content container-fluid">
+				    <a href="dsadmin.html" class="logo">
+						<img src="assets/img/logocme.png" width="115" height="50" alt="">
+					</a>
+					
+					<!-- Page Header -->
+					<div class="page-header">
+					<br>
+						<div class="row">
+							<div class="col-sm-12">
+								<h3 class="page-title">Welcome Admin!</h3>
+								<ul class="breadcrumb">
+									<li class="breadcrumb-item active">Dashboard</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- /Page Header -->
+				
+					<div class="row">
+						<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+							<div class="card dash-widget">
+								<div class="card-body">
+									<span class="dash-widget-icon"><i class="fa fa-cubes"></i></span>
+									<div class="dash-widget-info">
+										<h3>112</h3>
+										<span>Total Projects</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+							<div class="card dash-widget">
+								<div class="card-body">
+									<span class="dash-widget-icon"><i class="fa fa-user"></i></span>
+									<div class="dash-widget-info">
+										<h3>44</h3>
+										<span>Total Employees</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+							<div class="card dash-widget">
+								<div class="card-body">
+									<span class="dash-widget-icon"><i class="fa fa-calendar"></i></span>
+									<div class="dash-widget-info">
+										<h3>10</h3>
+										<span>Requested Leave</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+							<div class="card dash-widget">
+								<div class="card-body">
+									<span class="dash-widget-icon"><i class="fa fa-book"></i></span>
+									<div class="dash-widget-info">
+										<h3>5</h3>
+										<span>Monthly Report</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+							
+					<div class="row">
+						<div class="col-md-6 d-flex">
+							<div class="card card-table flex-fill">
+								<div class="card-header">
+									<h3 class="card-title mb-0">Monthly Report</h3>
+								</div>
+								<div class="card-body">
+									<div class="table-responsive">
+										<table class="table custom-table mb-0">
+											<thead>
+												<tr>
+													<th>Department</th>
+													<th>Project</th>
+													<th>Date Submited</th>
+													
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>
+														<h2 class="table-avatar">
+															
+															<a href="projecthtml">CML</a>
+														</h2>
+													</td>
+													<td>Monthly Report November</td>
+													<td> 3 December 2020</td>
+												</tr>
+												<tr>
+													<td>
+														<h2 class="table-avatar">
+															
+															<a href="projecthtml">Training</a>
+														</h2>
+													</td>
+													<td>Monthly Report November</td>
+													<td>4 December 2020</td>
+												</tr>
+												<tr>
+													<td>
+														<h2 class="table-avatar">
+															
+															<a href="projecthtml">Marketing</a>
+														</h2>
+													</td>
+													<td>Monthly Report November</td>
+													<td>4 December 2020</td>
+												</tr>
+												
+												
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="card-footer">
+									<a href="projects.html">View all projects</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 d-flex">
+							<div class="card card-table flex-fill">
+								<div class="card-header">
+									<h3 class="card-title mb-0">Independent Projects</h3>
+								</div>
+								<div class="card-body">
+									<div class="table-responsive">
+										<table class="table custom-table mb-0">
+											<thead>
+												<tr>
+													<th>Project Name </th>
+													<th>Comment</th>
+													<th class="text-right">Action</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>
+														<h2><a href="project-view.html">Discover Penyabong</a></h2>
+														
+													</td>
+													<td>
+													    <h2><a href="project-view.html">Good</a></h2>
+														
+													</td>
+													<td class="text-right">
+														<div class="dropdown dropdown-action">
+															<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+															<div class="dropdown-menu dropdown-menu-right">
+																<a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+																<a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+															</div>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<h2><a href="project-view.html">Monthly Report</a></h2>
+														
+													</td>
+													<td>
+													    <h2><a href="project-view.html">Good</a></h2>
+														
+													</td>
+													<td class="text-right">
+														<div class="dropdown dropdown-action">
+															<a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+															<div class="dropdown-menu dropdown-menu-right">
+																<a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+																<a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+															</div>
+														</div>
+													</td>
+												</tr>
+												
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="card-footer">
+									<a href="projects.html">View all projects</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+			
+				
+				</div>
+				<!-- /Page Content -->
+
+            </div>
+			<!-- /Page Wrapper -->
+			
+        </div>
+		<!-- /Main Wrapper -->
+		
+		<!-- jQuery -->
+        <script src="assets/js/jquery-3.2.1.min.js"></script>
+		
+		<!-- Bootstrap Core JS -->
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+		
+		<!-- Slimscroll JS -->
+		<script src="assets/js/jquery.slimscroll.min.js"></script>
+		
+		<!-- Chart JS -->
+		<script src="assets/plugins/morris/morris.min.js"></script>
+		<script src="assets/plugins/raphael/raphael.min.js"></script>
+		<script src="assets/js/chart.js"></script>
+		
+		<!-- Custom JS -->
+		<script src="assets/js/app.js"></script>
+		
+    </body>
+</html>
